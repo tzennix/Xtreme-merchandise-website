@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Xtreme | Merchandise</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <img src="images/xtreme-logo.png" class="logo-img">
+    <h1>Xtreme</h1>
+  </div>
+  <nav>
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="merchandise.html" class="nav-link">Merchandise</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+  </nav>
+</header>
+
+<h2 class="section-title">🔥 Xtreme Merchandise</h2>
+
+<div class="product-grid">
+
+  <!-- CAP -->
+  <div class="product-card">
+    <h3>Xtreme Cap</h3>
+    <img id="cap-img" src="images/cap_black.png" class="product-img">
+    <div class="color-options">
+      <button class="color black active" onclick="changeProduct('cap-img','cap_black.png',this)"></button>
+      <button class="color white" onclick="changeProduct('cap-img','cap_white.png',this)"></button>
+    </div>
+    <p class="price">₹299</p>
+  </div>
+
+  <!-- HOODIE -->
+  <div class="product-card">
+    <h3>Xtreme Hoodie</h3>
+    <img id="hoodie-img" src="images/hoodie_black.png" class="product-img">
+    <div class="color-options">
+      <button class="color black active" onclick="changeProduct('hoodie-img','hoodie_black.png',this)"></button>
+      <button class="color white" onclick="changeProduct('hoodie-img','hoodie_white.png',this)"></button>
+    </div>
+    <p class="price">₹499</p>
+  </div>
+
+  <!-- JACKET -->
+  <div class="product-card">
+    <h3>Xtreme Jacket</h3>
+    <img id="jacket-img" src="images/Jacket1.png" class="product-img">
+    <div class="color-options">
+      <button class="color black active" onclick="changeProduct('jacket-img','Jacket1.png',this)"></button>
+      <button class="color red" onclick="changeProduct('jacket-img','Jacket2.png',this)"></button>
+      <button class="color yellow" onclick="changeProduct('jacket-img','Jacket3.png',this)"></button>
+    </div>
+    <p class="price">₹1,899</p>
+  </div>
+
+  <!-- STICKERS -->
+  <div class="product-card">
+    <h3>Xtreme Stickers</h3>
+    <img id="sticker-img" src="images/Sticker_1.png" class="product-img">
+    <div class="color-options">
+      <button class="color pink active" onclick="changeProduct('sticker-img','Sticker_1.png',this)"></button>
+      <button class="color black" onclick="changeProduct('sticker-img','Sticker_2.png',this)"></button>
+    </div>
+    <p class="price">₹49</p>
+  </div>
+
+  <!-- SWEATSHIRT -->
+  <div class="product-card">
+    <h3>Xtreme Sweatshirt</h3>
+    <img id="sweat-img" src="images/Sweatshirt_BW.png" class="product-img">
+    <div class="color-options">
+      <button class="color black active" onclick="changeProduct('sweat-img','Sweatshirt_BW.png',this)"></button>
+      <button class="color green" onclick="changeProduct('sweat-img','Sweatshirt_GW.png',this)"></button>
+    </div>
+    <p class="price">₹799</p>
+  </div>
+
+  <!-- T-SHIRT -->
+  <div class="product-card">
+    <h3>Xtreme T-Shirt</h3>
+    <img id="tee-img" src="images/tshirt_black.png" class="product-img">
+    <div class="color-options">
+      <button class="color black active" onclick="changeProduct('tee-img','tshirt_black.png',this)"></button>
+      <button class="color white" onclick="changeProduct('tee-img','tshirt_White.png',this)"></button>
+    </div>
+    <p class="price">₹499</p>
+  </div>
+
+  <!-- TUMBLER -->
+  <div class="product-card">
+    <h3>Xtreme Tumbler</h3>
+    <img id="tumbler-img" src="images/tumbler_black.png" class="product-img">
+    <div class="color-options">
+      <button class="color black active" onclick="changeProduct('tumbler-img','tumbler_black.png',this)"></button>
+      <button class="color white" onclick="changeProduct('tumbler-img','tumbler_mattewhite.png',this)"></button>
+      <button class="color blue" onclick="changeProduct('tumbler-img','tumbler_midnightblue.png',this)"></button>
+      <button class="color grey" onclick="changeProduct('tumbler-img','tumbler_gunmetalgrey.png',this)"></button>
+      <button class="color olive" onclick="changeProduct('tumbler-img','tumbler_olivegreen.png',this)"></button>
+    </div>
+    <p class="price">₹1,299</p>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
