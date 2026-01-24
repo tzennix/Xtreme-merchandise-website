@@ -8,16 +8,29 @@
 <body>
 
 <header>
-  <div class="brand">
-    <img src="images/xtreme-logo.png" class="logo-img">
-    <h1>Xtreme</h1>
-  </div>
+<div class="brand logo-tilt">
+  <img src="images/xtreme-logo.png" class="logo-img" alt="Xtreme Logo">
+  <h1>Xtreme</h1>
+</div>
+<label class="theme-switch">
+  <input type="checkbox" id="theme-toggle">
+  <span class="switch-track">
+    <span class="switch-thumb"></span>
+  </span>
+</label>
+
+
+
   <nav>
     <a href="index.html" class="nav-link">Home</a>
     <a href="merchandise.html" class="nav-link">Merchandise</a>
+    <a href="cart.html" class="nav-link">Cart</a>
+    <a href="orders.html" class="nav-link">Orders</a>
+    <a href="profile.html" class="nav-link">Profile</a>
     <a href="about.html" class="nav-link">About</a>
     <a href="contact.html" class="nav-link">Contact</a>
-  </nav>
+    <a href="faq.html" class="nav-link">FAQ</a>
+</nav>
 </header>
 
 <h2 class="section-title">🔥 Xtreme Merchandise</h2>
@@ -29,10 +42,21 @@
     <h3>Xtreme Cap</h3>
     <img id="cap-img" src="images/cap_black.png" class="product-img">
     <div class="color-options">
-      <button class="color black active" onclick="changeProduct('cap-img','cap_black.png',this)"></button>
-      <button class="color white" onclick="changeProduct('cap-img','cap_white.png',this)"></button>
+      <button class="color black active"
+        onclick="changeProduct('cap-img','cap_black.png',this)"></button>
+      <button class="color white"
+        onclick="changeProduct('cap-img','cap_white.png',this)"></button>
     </div>
     <p class="price">₹299</p>
+    <button class="btn"
+      onclick="addToCart(
+        'Xtreme Cap',
+        299,
+        document.getElementById('cap-img').src,
+        getSelectedColor(this)
+      )">
+      Add to Cart
+    </button>
   </div>
 
   <!-- HOODIE -->
@@ -40,10 +64,21 @@
     <h3>Xtreme Hoodie</h3>
     <img id="hoodie-img" src="images/hoodie_black.png" class="product-img">
     <div class="color-options">
-      <button class="color black active" onclick="changeProduct('hoodie-img','hoodie_black.png',this)"></button>
-      <button class="color white" onclick="changeProduct('hoodie-img','hoodie_white.png',this)"></button>
+      <button class="color black active"
+        onclick="changeProduct('hoodie-img','hoodie_black.png',this)"></button>
+      <button class="color white"
+        onclick="changeProduct('hoodie-img','hoodie_white.png',this)"></button>
     </div>
     <p class="price">₹499</p>
+    <button class="btn"
+      onclick="addToCart(
+        'Xtreme Hoodie',
+        499,
+        document.getElementById('hoodie-img').src,
+        getSelectedColor(this)
+      )">
+      Add to Cart
+    </button>
   </div>
 
   <!-- JACKET -->
@@ -51,11 +86,23 @@
     <h3>Xtreme Jacket</h3>
     <img id="jacket-img" src="images/Jacket1.png" class="product-img">
     <div class="color-options">
-      <button class="color black active" onclick="changeProduct('jacket-img','Jacket1.png',this)"></button>
-      <button class="color red" onclick="changeProduct('jacket-img','Jacket2.png',this)"></button>
-      <button class="color yellow" onclick="changeProduct('jacket-img','Jacket3.png',this)"></button>
+      <button class="color black active"
+        onclick="changeProduct('jacket-img','Jacket1.png',this)"></button>
+      <button class="color red"
+        onclick="changeProduct('jacket-img','Jacket2.png',this)"></button>
+      <button class="color yellow"
+        onclick="changeProduct('jacket-img','Jacket3.png',this)"></button>
     </div>
     <p class="price">₹1,899</p>
+    <button class="btn"
+      onclick="addToCart(
+        'Xtreme Jacket',
+        1899,
+        document.getElementById('jacket-img').src,
+        getSelectedColor(this)
+      )">
+      Add to Cart
+    </button>
   </div>
 
   <!-- STICKERS -->
@@ -63,10 +110,21 @@
     <h3>Xtreme Stickers</h3>
     <img id="sticker-img" src="images/Sticker_1.png" class="product-img">
     <div class="color-options">
-      <button class="color pink active" onclick="changeProduct('sticker-img','Sticker_1.png',this)"></button>
-      <button class="color black" onclick="changeProduct('sticker-img','Sticker_2.png',this)"></button>
+      <button class="color pink active"
+        onclick="changeProduct('sticker-img','Sticker_1.png',this)"></button>
+      <button class="color black"
+        onclick="changeProduct('sticker-img','Sticker_2.png',this)"></button>
     </div>
     <p class="price">₹49</p>
+    <button class="btn"
+      onclick="addToCart(
+        'Xtreme Stickers',
+        49,
+        document.getElementById('sticker-img').src,
+        getSelectedColor(this)
+      )">
+      Add to Cart
+    </button>
   </div>
 
   <!-- SWEATSHIRT -->
@@ -74,10 +132,21 @@
     <h3>Xtreme Sweatshirt</h3>
     <img id="sweat-img" src="images/Sweatshirt_BW.png" class="product-img">
     <div class="color-options">
-      <button class="color black active" onclick="changeProduct('sweat-img','Sweatshirt_BW.png',this)"></button>
-      <button class="color green" onclick="changeProduct('sweat-img','Sweatshirt_GW.png',this)"></button>
+      <button class="color black active"
+        onclick="changeProduct('sweat-img','Sweatshirt_BW.png',this)"></button>
+      <button class="color green"
+        onclick="changeProduct('sweat-img','Sweatshirt_GW.png',this)"></button>
     </div>
     <p class="price">₹799</p>
+    <button class="btn"
+      onclick="addToCart(
+        'Xtreme Sweatshirt',
+        799,
+        document.getElementById('sweat-img').src,
+        getSelectedColor(this)
+      )">
+      Add to Cart
+    </button>
   </div>
 
   <!-- T-SHIRT -->
@@ -85,10 +154,21 @@
     <h3>Xtreme T-Shirt</h3>
     <img id="tee-img" src="images/tshirt_black.png" class="product-img">
     <div class="color-options">
-      <button class="color black active" onclick="changeProduct('tee-img','tshirt_black.png',this)"></button>
-      <button class="color white" onclick="changeProduct('tee-img','tshirt_White.png',this)"></button>
+      <button class="color black active"
+        onclick="changeProduct('tee-img','tshirt_black.png',this)"></button>
+      <button class="color white"
+        onclick="changeProduct('tee-img','tshirt_White.png',this)"></button>
     </div>
     <p class="price">₹499</p>
+    <button class="btn"
+      onclick="addToCart(
+        'Xtreme T-Shirt',
+        499,
+        document.getElementById('tee-img').src,
+        getSelectedColor(this)
+      )">
+      Add to Cart
+    </button>
   </div>
 
   <!-- TUMBLER -->
@@ -96,13 +176,27 @@
     <h3>Xtreme Tumbler</h3>
     <img id="tumbler-img" src="images/tumbler_black.png" class="product-img">
     <div class="color-options">
-      <button class="color black active" onclick="changeProduct('tumbler-img','tumbler_black.png',this)"></button>
-      <button class="color white" onclick="changeProduct('tumbler-img','tumbler_mattewhite.png',this)"></button>
-      <button class="color blue" onclick="changeProduct('tumbler-img','tumbler_midnightblue.png',this)"></button>
-      <button class="color grey" onclick="changeProduct('tumbler-img','tumbler_gunmetalgrey.png',this)"></button>
-      <button class="color olive" onclick="changeProduct('tumbler-img','tumbler_olivegreen.png',this)"></button>
+      <button class="color black active"
+        onclick="changeProduct('tumbler-img','tumbler_black.png',this)"></button>
+      <button class="color white"
+        onclick="changeProduct('tumbler-img','tumbler_mattewhite.png',this)"></button>
+      <button class="color blue"
+        onclick="changeProduct('tumbler-img','tumbler_midnightblue.png',this)"></button>
+      <button class="color grey"
+        onclick="changeProduct('tumbler-img','tumbler_gunmetalgrey.png',this)"></button>
+      <button class="color olive"
+        onclick="changeProduct('tumbler-img','tumbler_olivegreen.png',this)"></button>
     </div>
     <p class="price">₹1,299</p>
+    <button class="btn"
+      onclick="addToCart(
+        'Xtreme Tumbler',
+        1299,
+        document.getElementById('tumbler-img').src,
+        getSelectedColor(this)
+      )">
+      Add to Cart
+    </button>
   </div>
 
 </div>

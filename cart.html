@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Xtreme | About</title>
+  <title>Xtreme | Cart</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
- <div class="brand logo-tilt">
+<div class="brand logo-tilt">
   <img src="images/xtreme-logo.png" class="logo-img" alt="Xtreme Logo">
   <h1>Xtreme</h1>
 </div>
@@ -33,31 +33,16 @@
 </header>
 
 <div class="page">
-  <h2>About Xtreme</h2>
+  <h2>Your Cart</h2>
 
-  <p>
-    <b>Xtreme</b> is a modern lifestyle and streetwear brand created for individuals
-    who believe in confidence, speed, and bold self-expression.
-  </p>
+  <!-- Cart items rendered by script.js -->
+  <div id="cart-items"></div>
 
-  <p>
-    Our mission is to deliver premium-quality merchandise that blends
-    urban fashion with comfort and affordability.
-  </p>
+  <!-- Total price -->
+  <h3 id="cart-total"></h3>
 
-  <h3>Why Choose Xtreme?</h3>
-  <ul>
-    <li>High-quality fabrics and durable prints</li>
-    <li>Exclusive streetwear-inspired designs</li>
-    <li>Youth-focused and trend-driven branding</li>
-    <li>Affordable pricing with fast delivery</li>
-  </ul>
-
-  <h3>Our Vision</h3>
-  <p>
-    To become a leading Indian streetwear brand that empowers youth
-    to live bold and express their true identity.
-  </p>
+  <!-- Checkout button -->
+  <button class="btn" onclick="checkout()">Proceed to Checkout</button>
 </div>
 
 <script src="script.js"></script>

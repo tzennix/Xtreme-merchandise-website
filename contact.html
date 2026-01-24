@@ -8,41 +8,59 @@
 <body>
 
 <header>
-  <div class="brand">
-    <img src="images/xtreme-logo.png" class="logo-img">
+  <div class="brand logo-tilt">
+    <img src="images/xtreme-logo.png" class="logo-img" alt="Xtreme Logo">
     <h1>Xtreme</h1>
   </div>
+<label class="theme-switch">
+  <input type="checkbox" id="theme-toggle">
+  <span class="switch-track">
+    <span class="switch-thumb"></span>
+  </span>
+</label>
+
+
   <nav>
     <a href="index.html" class="nav-link">Home</a>
     <a href="merchandise.html" class="nav-link">Merchandise</a>
+    <a href="cart.html" class="nav-link">Cart</a>
+    <a href="orders.html" class="nav-link">Orders</a>
+    <a href="profile.html" class="nav-link">Profile</a>
     <a href="about.html" class="nav-link">About</a>
     <a href="contact.html" class="nav-link">Contact</a>
-  </nav>
+    <a href="faq.html" class="nav-link">FAQ</a>
+</nav>
 </header>
 
-<div class="contact-container">
+<!-- CONTACT CARD -->
+<section class="contact-container">
 
   <!-- LEFT INFO -->
-  <div class="contact-info">
-    <h3>Mumbai, India</h3>
+ <div class="contact-info">
+  <h2>Get in Touch</h2>
 
-    <p class="label">Office Hours</p>
-    <p>
-      Monday – Friday<br>
-      11AM – 8PM
-    </p>
-  </div>
+  <p class="label">📍 Location</p>
+  <p>Mumbai, India</p>
+
+  <p class="label">⏰ Office Hours</p>
+  <p>
+    Monday – Friday<br>
+    11:00 AM – 8:00 PM
+  </p>
+
+  <p class="label">✉ Support Email</p>
+  <p>support@xtreme.com</p>
+</div>
 
   <!-- RIGHT FORM -->
   <form class="contact-form">
-
     <div class="form-row">
       <input type="text" placeholder="First Name" required>
       <input type="text" placeholder="Last Name" required>
     </div>
 
     <div class="form-row">
-      <input type="email" placeholder="Email" required>
+      <input type="email" placeholder="Email Address" required>
       <select required>
         <option value="">Select a service</option>
         <option>Merchandise</option>
@@ -51,14 +69,12 @@
       </select>
     </div>
 
-    <textarea rows="4" placeholder="Write your message..."></textarea>
+    <textarea rows="5" placeholder="Write your message..." required></textarea>
 
     <button type="submit" class="btn">Submit</button>
-
   </form>
 
-</div>
-
+</section>
 
 <script src="script.js"></script>
 </body>
